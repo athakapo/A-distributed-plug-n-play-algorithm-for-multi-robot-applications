@@ -1,6 +1,6 @@
 # A distributed, plug-n-play algorithm for multi-robot applications
 
-This project is a multi-robot framework capable of dealing with applications where the overall mission objectives can be casted to the optimization of an objective function. 
+This project is a multi-robot framework capable of dealing with applications where the overall mission objectives can be casted to the optimization of an objective function. More information about the algorithm and an extensive set of experiments can be found [here](http://kapoutsis.info/wp-content/uploads/2019/05/j4.pdf). 
 
  Inside the project there are two different multi-robot frameworks: 
  
@@ -45,3 +45,20 @@ Any new testbed should be acompnied with the appropiate series of unit tests tha
 ## License
 
 This project is licensed under the GNU GPLv3 License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Cite as: 
+
+```
+@article{kapoutsis2019distributed,
+title={A distributed, plug-n-play algorithm for multi-robot applications with a priori non-computable objective functions},
+author={Kapoutsis, Athanasios Ch and Chatzichristofis, Savvas A and Kosmatopoulos, Elias B},
+journal={The International Journal of Robotics Research},
+year={2019},
+volume={38},
+number={7},
+pages={813-832},
+issn={1573-0409},
+doi={10.1177/0278364919845054},
+publisher={SAGE}
+}
+```
