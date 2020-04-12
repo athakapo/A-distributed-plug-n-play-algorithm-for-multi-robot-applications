@@ -8,6 +8,12 @@ This project is a multi-robot framework capable of dealing with applications whe
 
 [**AdaptiveCoverage2D**]: In the second simulation setup the objective is to spread out the robots over a 2D environment while aggregating in areas of high sensory interest. An important aspect of the set-up is the fact that, the robots are not aware beforehand of the sensory areas of interest, but they learn this information on-line, utilizing sensor measurements from their current positions.
 
+## Built With
+
+* [IntelliJ IDEA](https://www.jetbrains.com/idea/) - The used java IDEA 
+* [Maven](https://maven.apache.org/) - Dependency Management
+
+
 ## Add your multi-robot testbed
 
 A valid testbed should contain the following:
@@ -33,10 +39,6 @@ The *validator* class contains tests for each one of the implemented testbeds. I
 
 Any new testbed should be acompnied with the appropiate series of unit tests that documents its expected operation/performance.
 
-## Built With
-
-* [IntelliJ IDEA](https://www.jetbrains.com/idea/) - The used java IDEA 
-* [Maven](https://maven.apache.org/) - Dependency Management
 
 ## Authors
 
