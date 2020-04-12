@@ -27,7 +27,7 @@ A valid testbed should contain the following:
 
 > **Note:** Examples of implemented testbeds along with the corresponing functions can be found inside the *testbeds.AdaptiveCoverage2D* and  *testbeds.HoldTheLine* packages.
 
-## Running the tests
+## Run the tests
 
 The *validator* class contains tests for each one of the implemented testbeds. In each one of these tests, a series of experiments is executed with different number of robots. 
 
