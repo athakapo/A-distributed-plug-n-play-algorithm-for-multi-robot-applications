@@ -4,7 +4,7 @@ This project is a multi-robot framework capable of dealing with applications whe
 
  Inside the project there are two different multi-robot frameworks: 
  
-[**HoldTheLine**]: A rather simple problem (toy-problem), where the robots should be deployed in a specific formation (line). 
+[**HoldTheLine**]: A simple problem (toy-problem), where the robots should be deployed in a specific formation (line). 
 
 [**AdaptiveCoverage2D**]: In the second simulation setup the objective is to spread out the robots over a 2D environment while aggregating in areas of high sensory interest. An important aspect of the set-up is the fact that, the robots are not aware beforehand of the sensory areas of interest, but they learn this information on-line, utilizing sensor measurements from their current positions.
 
