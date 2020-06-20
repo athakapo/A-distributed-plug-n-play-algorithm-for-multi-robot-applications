@@ -1,4 +1,4 @@
-# A distributed, plug-n-play algorithm for multi-robot applications
+# A distributed, plug-n-play algorithm for multi-robot applications with a priori non-computable objective functions
 
 This project is a multi-robot framework capable of dealing with applications where the overall mission objectives can be casted to the optimization of an objective function. More information about the algorithm and an extensive set of experiments can be found [here](http://kapoutsis.info/wp-content/uploads/2019/05/j4.pdf). 
 
