@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="A-distributed-plug-n-play-algorithm-for-multi-robot-applications-with-a-priori-non-computable-objec" />
         <module name="DistributedPlugNPlayMultiRobotAlgorithm" />
       </profile>
     </annotationProcessing>
