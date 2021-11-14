@@ -40,7 +40,7 @@ This application addresses the problem of positioning a swarm of UAVs inside a c
 
 <img src="images/Autonomous_and_Cooperative/figure.png">
 
-More information about this setup along with an extensive set of experiment can be found is this [article](https://doi.org/10.1109/LRA.2020.3004780):
+More information about this setup along with an extensive set of experiment can be found in this [article](https://doi.org/10.1109/LRA.2020.3004780):
 
 _Koutras, D.I., Kapoutsis, A.C. and Kosmatopoulos, E.B., 2020. Autonomous and cooperative design of the monitor positions for a team of UAVs to maximize the quantity and quality of detected objects. IEEE Robotics and Automation Letters, 5(3), pp.4986-4993._
 
