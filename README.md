@@ -1,13 +1,14 @@
 # A distributed, plug-n-play algorithm for multi-robot applications with a priori non-computable objective functions
 
+> _Kapoutsis, A.C., Chatzichristofis, S.A. and Kosmatopoulos, E.B., 2019. A distributed, plug-n-play algorithm for multi-robot applications with a priori non-computable objective functions. The International Journal of Robotics Research, 38(7), pp.813-832._
+* [Preprint](https://kapoutsis.info/wp-content/uploads/2019/05/j4.pdf)
+* [Journal Article](https://journals.sagepub.com/doi/10.1177/0278364919845054)
+
 This project presents a distributed algorithm applicable to a wide range of practical multi-robot applications. In such multi-robot applications, the user-defined objectives of the mission can be cast as a general optimization problem, without explicit guidelines of the subtasks per different robot.
 
 <img src="images/bcd-cao.png">
 
 The main advantage of the proposed algorithm lies in the way of calculating each robot's contribution to the accomplishment of the overall mission objectives. Although each robot does not know explicitly either the decision variables of the other robots nor of their measurements, it is able to update its own decision variables effectively in a way to cooperatively achieve the team objectives. The latter can be achieved through a cost function that is exclusive to each robot, designed so as to encapsulate not only the mission objectives but also the other robots’ dynamics (“data-driven gradient descent” approach: for more details see Section 3 of [here](https://doi.org/10.1177/0278364919845054)). Rigorous arguments establish that despite the fact that the dynamics that govern the multi-robot system are unknown, the proposed methodology shares the same convergence characteristics as those of [block coordinate descent algorithms](https://en.wikipedia.org/wiki/Coordinate_descent). As exhibited in the presented applications, the distributed nature of the proposed algorithm also allows rapid convergence, especially in cases with many robots.
-
-* [Preprint](https://kapoutsis.info/wp-content/uploads/2019/05/j4.pdf)
-* [Journal Article](https://journals.sagepub.com/doi/10.1177/0278364919845054)
 
 ## Applications
 
@@ -21,7 +22,7 @@ More information about this setup along with an extensive set of experiment can 
 _Kapoutsis, A.C., Chatzichristofis, S.A. and Kosmatopoulos, E.B., 2019. A distributed, plug-n-play algorithm for multi-robot applications with a priori non-computable objective functions. The International Journal of Robotics Research, 38(7), pp.813-832._
 
 ### Three-dimensional surveillance of unknown areas
-The problem of deploying a team of flying robots to perform surveillance coverage missions over an unknown terrain of complex and non-convex morphology is presented. In such a mission, the robots attempt to maximize the part of the terrain that is visible while keeping the distance between each point in the terrain and the closest team member as small as possible. A trade-off between these two objectives should be fulfilled given the physical constraints and limitations imposed at the particular application.
+This applications deals with the problem of deploying a team of flying robots to perform surveillance coverage missions over an unknown terrain of complex and non-convex morphology. In such a mission, the robots attempt to maximize the part of the terrain that is visible while keeping the distance between each point in the terrain and the closest team member as small as possible. A trade-off between these two objectives should be fulfilled given the physical constraints and limitations imposed at the particular application.
 
 <img src="images/Three-dimensional_surveillance/figure.png">
 
@@ -30,7 +31,7 @@ More information about this setup along with an extensive set of experiment, inc
 _Kapoutsis, A.C., Chatzichristofis, S.A. and Kosmatopoulos, E.B., 2019. A distributed, plug-n-play algorithm for multi-robot applications with a priori non-computable objective functions. The International Journal of Robotics Research, 38(7), pp.813-832._
 
 ### Persistent coverage inside unknown environment
-In this application, it is assumed that the operational robots are equipped with the appropriate sensors that are able to cover a portion of the environment. The objective in a persistent coverage application is to continuously cover an area of interest, assuming that the coverage level follows a time-decaying function.
+This application assumes that the operational robots are equipped with the appropriate sensors to be cover a limited portion of the environment around their current position. The objective in a persistent coverage application is to continuously cover an area of interest, assuming that the coverage level follows a time-decaying function.
 
 <img src="images/Persistent_coverage_inside/figure.png">
 
