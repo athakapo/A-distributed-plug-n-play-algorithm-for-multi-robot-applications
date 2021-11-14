@@ -11,7 +11,7 @@ The main advantage of the proposed algorithm is that each robot does not know ex
 #### Adaptive coverage control utilizing Voronoi partitioning
 The objective for the network of robots is to spread out over an environment, while aggregating in areas of high sensory interest. Furthermore, the robots do not know beforehand where the areas of sensory interest are, but they learn this information online from sensor measurements. The aforementioned task can be found in applications such as environmental monitoring and clean-up, automatic surveillance of rooms/buildings/towns, or search-and-rescue missions.
 
-<img src="Adaptive coverage control utilizingVoronoi partitioning/adaptiveCoverage.png">
+<img src="images/Adaptive_Coverage_Control/adaptiveCoverage.png">
 
 More information about this setup along with an extensive set of experiment can be found in Section 4 of this [article](https://doi.org/10.1177/0278364919845054):
 
@@ -20,7 +20,7 @@ _Kapoutsis, A.C., Chatzichristofis, S.A. and Kosmatopoulos, E.B., 2019. A distri
 #### Three-dimensional surveillance of unknown areas
 The problem of deploying a team of flying robots to perform surveillance coverage missions over an unknown terrain of complex and non-convex morphology is presented. In such a mission, the robots attempt to maximize the part of the terrain that is visible while keeping the distance between each point in the terrain and the closest team member as small as possible. A trade-off between these two objectives should be fulfilled given the physical constraints and limitations imposed at the particular application.
 
-<img src="Three-dimensional surveillance of unknown areas/figure.png">
+<img src="images/Three-dimensional_surveillance/figure.png">
 
 More information about this setup along with an extensive set of experiment, including fault-tolerant characteristics and changes in the mission objectives during the execution, can be found in Section 5 of this [article](https://doi.org/10.1177/0278364919845054):
 
@@ -29,7 +29,7 @@ _Kapoutsis, A.C., Chatzichristofis, S.A. and Kosmatopoulos, E.B., 2019. A distri
 #### Persistent coverage inside unknown environment
 In this application, it is assumed that the operational robots are equipped with the appropriate sensors that are able to cover a portion of the environment. The objective in a persistent coverage application is to continuously cover an area of interest, assuming that the coverage level follows a time-decaying function.
 
-<img src="Persistent coverage inside unknown environment/figure.png">
+<img src="images/Persistent_coverage_inside/figure.png">
 
 More information about this setup along with an extensive set of experiment can be found in Section 6 of this [article](https://doi.org/10.1177/0278364919845054):
 
@@ -38,7 +38,7 @@ _Kapoutsis, A.C., Chatzichristofis, S.A. and Kosmatopoulos, E.B., 2019. A distri
 #### Autonomous and Cooperative Design of the Monitor Positions for a Team of UAVs to Maximize the Quantity and Quality of Detected Objects
 This application addresses the problem of positioning a swarm of UAVs inside a completely unknown terrain, having as objective to maximize the overall situational awareness. The situational awareness is expressed by the number and quality of unique objects of interest, inside the UAVs' fields of view. YOLOv3 and a system to identify duplicate objects of interest were employed to assign a single score to each UAVs' configuration.
 
-<img src="Autonomous and Cooperative Design of the Monitor Positions for a Team of UAVs to Maximize the Quantity and Quality of Detected Objects/figure.png">
+<img src="images/Autonomous_and_Cooperative/figure.png">
 
 More information about this setup along with an extensive set of experiment can be found is this [article](https://doi.org/10.1109/LRA.2020.3004780):
 
@@ -47,7 +47,7 @@ _Koutras, D.I., Kapoutsis, A.C. and Kosmatopoulos, E.B., 2020. Autonomous and co
 #### Building synergetic consensus for dynamic gas-plume tracking applications using UAV platforms
 This article investigates the problem of deploying a swarm of UAVs equipped with gas sensors for industrial remote gas-plume sensing. This setup’s objective is to continuously adjust the swarm formation to maximize the combined perception for the dynamically evolved plume’s cloud, focusing around areas with the highest concentration/intensity.
 
-<img src="Building synergetic consensus for dynamic gas-plume tracking applications using UAV platforms/figure.png">
+<img src="images/Building_synergetic_consensus/figure.png">
 
 More information about this setup along with an extensive set of experiment can be found in Section 6 of this [article](https://doi.org/10.1016/j.compeleceng.2021.107029):
 
