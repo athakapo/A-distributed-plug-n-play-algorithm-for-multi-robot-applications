@@ -1,6 +1,6 @@
 import loaders.ResourceLoader;
-import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.junit.*;
 
 import java.io.IOException;
@@ -11,8 +11,7 @@ import static junit.framework.TestCase.assertTrue;
 
 public class Validator {
 
-    private static final Logger LOG = Logger.getLogger(Main.class);
-    private static final String PROPERTIES_LOG = "logging.properties";
+    private static final Logger LOG = LogManager.getLogger(Main.class);
     private static ResourceLoader resourceLoader;
 
     private static final int timeout_HOLDTHELINE = 25000; //25 sec
@@ -21,7 +20,6 @@ public class Validator {
     @BeforeClass
     public static void Initialiazer() throws IOException {
         resourceLoader = new ResourceLoader();
-        PropertyConfigurator.configure(resourceLoader.getProperties(PROPERTIES_LOG));
         LOG.info("Entry point");
     }
 

@@ -1,14 +1,15 @@
 package environment;
 
 import matlabFilesBuilder.WriteLogFiles;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import java.util.Properties;
 import java.util.Random;
 
 abstract public class Setup {
 
-    private static final Logger LOG = Logger.getLogger(Setup.class);
+    private static final Logger LOG = LogManager.getLogger(Setup.class);
     private WriteLogFiles logHelper;
     public int D, nr;
     public double dt;

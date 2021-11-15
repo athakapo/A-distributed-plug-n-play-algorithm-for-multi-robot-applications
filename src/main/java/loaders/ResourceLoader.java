@@ -1,7 +1,8 @@
 package loaders;
 
 import exceptions.InvalidResourcePath;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -16,7 +17,7 @@ import java.util.HashMap;
 import java.util.Properties;
 
 public class ResourceLoader {
-    private static final Logger LOG = Logger.getLogger(ResourceLoader.class);
+    private static final Logger LOG = LogManager.getLogger(ResourceLoader.class);
     private static final String PREFIX_PROPERTIES = "properties/";
 
     public Properties getPropertiesAP(String resourcePath) throws IOException {
@@ -55,11 +56,6 @@ public class ResourceLoader {
     public InputStream getInputStream(String resourcePath) {
         return getClass().getClassLoader().getResourceAsStream(resourcePath);
     }
-
-
-//    public InputStream getInputStream(String resourcePath) throws InvalidResourcePath, IOException {
-//        return getInputStream(getPath(resourcePath));
-//    }
 
     public InputStream getInputStream(final Path path) throws IOException {
         return Files.newInputStream(path);

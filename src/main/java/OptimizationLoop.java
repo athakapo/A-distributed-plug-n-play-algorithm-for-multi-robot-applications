@@ -2,7 +2,8 @@ import environment.Setup;
 import loaders.ResourceLoader;
 import matlabFilesBuilder.WriteLogFiles;
 import optimizer.CentralizedDecisionMaking;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import java.io.IOException;
 import java.util.Properties;
@@ -12,7 +13,7 @@ import java.util.Properties;
  */
 public class OptimizationLoop {
 
-    private static final Logger LOG = Logger.getLogger(OptimizationLoop.class);
+    private static final Logger LOG = LogManager.getLogger(OptimizationLoop.class);
     private double[] JJ;
     private String testbedName;
     private Properties propertiesFILE;
