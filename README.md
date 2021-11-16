@@ -1,7 +1,7 @@
 # A distributed, plug-n-play algorithm for multi-robot applications with a priori non-computable objective functions
 
 > _Kapoutsis, A.C., Chatzichristofis, S.A. and Kosmatopoulos, E.B., 2019. A distributed, plug-n-play algorithm for multi-robot applications with a priori non-computable objective functions. The International Journal of Robotics Research, 38(7), pp.813-832._
-* [Preprint](https://kapoutsis.info/wp-content/uploads/2019/05/j4.pdf)
+* [arXiv](https://arxiv.org/abs/2111.07441)
 * [Journal Article](https://journals.sagepub.com/doi/10.1177/0278364919845054)
 
 This project presents a distributed algorithm applicable to a wide range of practical multi-robot applications. In such multi-robot applications, the user-defined objectives of the mission can be cast as a general optimization problem, without explicit guidelines of the subtasks per different robot.
