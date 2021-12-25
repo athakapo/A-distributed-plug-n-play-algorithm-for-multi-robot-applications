@@ -10,6 +10,43 @@ This project presents a distributed algorithm applicable to a wide range of prac
 
 The main advantage of the proposed algorithm lies in the way of calculating each robot's contribution to the accomplishment of the overall mission objectives. Although each robot does not know explicitly either the decision variables of the other robots nor of their measurements, it is able to update its own decision variables effectively in a way to cooperatively achieve the team objectives. The latter can be achieved through a cost function that is exclusive to each robot, designed so as to encapsulate not only the mission objectives but also the other robots’ dynamics (“data-driven gradient descent” approach: for more details see Section 3 of [here](https://doi.org/10.1177/0278364919845054)). Rigorous arguments establish that despite the fact that the dynamics that govern the multi-robot system are unknown, the proposed methodology shares the same convergence characteristics as those of [block coordinate descent algorithms](https://en.wikipedia.org/wiki/Coordinate_descent). As exhibited in the presented applications, the distributed nature of the proposed algorithm also allows rapid convergence, especially in cases with many robots.
 
+## Shipped With
+Inside the project there are two different multi-robot example frameworks:
+
+[**HoldTheLine**]: A simple problem (toy-problem), where the robots should be deployed in a specific formation (line).
+
+[**AdaptiveCoverage2D**]: In the second simulation setup the objective is to spread out the robots over a 2D environment while aggregating in areas of high sensory interest. An important aspect of the set-up is the fact that, the robots are not aware beforehand of the sensory areas of interest, but they learn this information on-line, utilizing sensor measurements from their current positions.
+
+## Built With
+
+* [IntelliJ IDEA](https://www.jetbrains.com/idea/) - The used java IDEA
+* [Maven](https://maven.apache.org/) - Dependency Management
+
+## Add your multi-robot testbed
+
+A valid testbed should contain the following:
+
+-  A class inside the package *testbed.TESTBED_NAME* with name
+   ```
+   Framework
+   ``` 
+   that extends the *environment.Setup* class.
+
+
+-  A properties file inside *resources.testbeds.TESTBED_NAME* with name
+   ```
+   Parameters.properties
+   ```
+   that contains all the needed fields (check *Parameters_template.properties* file).
+
+> **Note:** Examples of implemented testbeds along with the corresponing functions can be found inside the *testbeds.AdaptiveCoverage2D* and  *testbeds.HoldTheLine* packages.
+
+## Run the tests
+
+The *validator* class contains tests for each one of the implemented testbeds. In each one of these tests, a series of experiments is executed with different number of robots.
+
+Any new testbed should be acompnied with the appropiate series of unit tests that documents its expected operation/performance.
+
 ## Applications
 
 ### Adaptive coverage control utilizing Voronoi partitioning
@@ -61,45 +98,6 @@ _Kapoutsis, A.C., Michailidis, I.T., Boutalis, Y. and Kosmatopoulos, E.B., 2021.
 An extension of such application to incorporate also information from static sensors on the field (WSN) can be found [here](https://doi.org/10.1007/978-3-030-79150-6_48):
 
 _Michailidis, I.T., Kapoutsis, A.C., Kosmatopoulos, E.B. and Boutalis, Y., 2021, June. Dynamic Plume Tracking Utilizing Symbiotic Heterogeneous Remote Sensing Platforms. In IFIP International Conference on Artificial Intelligence Applications and Innovations (pp. 607-618). Springer, Cham._
-
-
-## Shipped With
-Inside the project there are two different multi-robot example frameworks:
-
-[**HoldTheLine**]: A simple problem (toy-problem), where the robots should be deployed in a specific formation (line).
-
-[**AdaptiveCoverage2D**]: In the second simulation setup the objective is to spread out the robots over a 2D environment while aggregating in areas of high sensory interest. An important aspect of the set-up is the fact that, the robots are not aware beforehand of the sensory areas of interest, but they learn this information on-line, utilizing sensor measurements from their current positions.
-
-## Built With
-
-* [IntelliJ IDEA](https://www.jetbrains.com/idea/) - The used java IDEA
-* [Maven](https://maven.apache.org/) - Dependency Management
-
-## Add your multi-robot testbed
-
-A valid testbed should contain the following:
-
--  A class inside the package *testbed.TESTBED_NAME* with name
-   ```
-   Framework
-   ``` 
-   that extends the *environment.Setup* class.
-
-
--  A properties file inside *resources.testbeds.TESTBED_NAME* with name
-   ```
-   Parameters.properties
-   ```
-   that contains all the needed fields (check *Parameters_template.properties* file).
-
-> **Note:** Examples of implemented testbeds along with the corresponing functions can be found inside the *testbeds.AdaptiveCoverage2D* and  *testbeds.HoldTheLine* packages.
-
-## Run the tests
-
-The *validator* class contains tests for each one of the implemented testbeds. In each one of these tests, a series of experiments is executed with different number of robots.
-
-Any new testbed should be acompnied with the appropiate series of unit tests that documents its expected operation/performance.
-
 
 ## Authors
 
