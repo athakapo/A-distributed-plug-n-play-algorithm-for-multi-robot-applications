@@ -4,6 +4,13 @@
 * [arXiv](https://arxiv.org/abs/2111.07441)
 * [Journal Article](https://journals.sagepub.com/doi/10.1177/0278364919845054)
 
+This repository contains the **Java** implementation of our distributed plug-n-play algorithm for multi-robot applications.
+
+## Twin Repository (Python)
+A **Python** twin implementation is also available here:  [pyBCD-CAO](https://github.com/athakapo/pyBCD-CAO)
+
+---
+
 This project presents a distributed algorithm applicable to a wide range of practical multi-robot applications. In such multi-robot applications, the user-defined objectives of the mission can be cast as a general optimization problem, without explicit guidelines of the subtasks per different robot.
 
 <img src="images/bcd-cao.png">
