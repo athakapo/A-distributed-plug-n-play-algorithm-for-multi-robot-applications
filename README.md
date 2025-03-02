@@ -1,4 +1,4 @@
-# A distributed, plug-n-play algorithm for multi-robot applications with a priori non-computable objective functions (Java Version)
+# A Distributed, Plug-n-Play Algorithm for Multi-Robot Applications With a Priori Non-Computable Objective Functions (Java Version)
 
 > **Kapoutsis, A.C., Chatzichristofis, S.A. and Kosmatopoulos, E.B., 2019.**  
 > *A distributed, plug-n-play algorithm for multi-robot applications with a priori non-computable objective functions.*  
