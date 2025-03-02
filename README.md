@@ -4,7 +4,15 @@
 * [arXiv](https://arxiv.org/abs/2111.07441)
 * [Journal Article](https://journals.sagepub.com/doi/10.1177/0278364919845054)
 
-This project presents a distributed algorithm applicable to a wide range of practical multi-robot applications. In such multi-robot applications, the user-defined objectives of the mission can be cast as a general optimization problem, without explicit guidelines of the subtasks per different robot.
+This Java-based project presents a distributed algorithm applicable to a wide range of practical multi-robot applications. In such multi-robot applications, the user-defined objectives of the mission can be cast as a general optimization problem, without explicit guidelines of the subtasks per different robot.
+  
+---
+
+## Twin Repository (Python)
+
+A **Python** twin implementation is also available here:  [pyBCD-CAO](https://github.com/athakapo/pyBCD-CAO)
+
+---
 
 <img src="images/bcd-cao.png">
 
